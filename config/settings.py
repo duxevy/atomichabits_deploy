@@ -176,7 +176,7 @@ SIMPLE_JWT = {
 # Settings for Celery
 
 # The URL of the message broker
-CELERY_BROKER_URL = f"redis://{os.getenv("REDIS_HOST")}:{os.getenv("REDIS_PORT")}/0" # For example, Redis, which runs on port 6379 by default.
+CELERY_BROKER_URL = f"redis://{os.getenv("REDIS_HOST")}:{os.getenv("REDIS_PORT")}/0"
 
 # The URL of the results broker, also Redis
 CELERY_RESULT_BACKEND = f"redis://{os.getenv("REDIS_HOST")}:{os.getenv("REDIS_PORT")}/0"
